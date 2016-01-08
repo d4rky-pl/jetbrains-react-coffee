@@ -64,13 +64,13 @@
     <option name="CoffeeScript" value="true" />
   </context>
 </template>
-<template name="rcc" value="DOM = React.DOM&#10;&#10;$class$ = React.createClass -&gt;&#10;  render: -&gt;&#10;    $END$&#10;&#10;window.$class$ = $class$&#10;" description="Create a React.js component" toReformat="false" toShortenFQNames="true">
+<template name="rcc" value="DOM = React.DOM&#10;&#10;$class$ = React.createClass &#10;  render: -&gt;&#10;    $END$&#10;&#10;window.$class$ = $class$&#10;" description="Create a React.js component" toReformat="false" toShortenFQNames="true">
   <variable name="class" expression="complete()" defaultValue="" alwaysStopAt="true" />
   <context>
     <option name="CoffeeScript" value="true" />
   </context>
 </template>
-<template name="rccc" value="$START$ = React.createClass -&gt;&#10;  render: -&gt;&#10;    $END$&#10;" description="Create a sub component" toReformat="false" toShortenFQNames="true">
+<template name="rccc" value="$START$ = React.createClass &#10;  render: -&gt;&#10;    $END$&#10;" description="Create a sub component" toReformat="false" toShortenFQNames="true">
   <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
   <context>
     <option name="CoffeeScript" value="true" />
