@@ -3,7 +3,7 @@
     <option name="CoffeeScript" value="true" />
   </context>
 </template>
-<template name="cdu" value="componentDidUpdate: -&gt; (prevProps, prevState)&#10;  $END$&#10;" description="componentDidUpdate" toReformat="false" toShortenFQNames="true">
+<template name="cdu" value="componentDidUpdate: (prevProps, prevState) -&gt;&#10;  $END$&#10;" description="componentDidUpdate" toReformat="false" toShortenFQNames="true">
   <context>
     <option name="CoffeeScript" value="true" />
   </context>
@@ -13,12 +13,12 @@
     <option name="CoffeeScript" value="true" />
   </context>
 </template>
-<template name="cwr" value="componentWillReceiveProps: -&gt; (nextProps) &#10;  $END$&#10;&#10;" description="componentWillReceiveProps" toReformat="false" toShortenFQNames="true">
+<template name="cwr" value="componentWillReceiveProps: (nextProps) -&gt; &#10;  $END$&#10;&#10;" description="componentWillReceiveProps" toReformat="false" toShortenFQNames="true">
   <context>
     <option name="CoffeeScript" value="true" />
   </context>
 </template>
-<template name="cwu" value="componentWillUpdate(nextProps, nextState) {&#10;  $END$&#10;},&#10;" description="componentWillUpdate" toReformat="false" toShortenFQNames="true">
+<template name="cwu" value="componentWillUpdate: (nextProps, nextState) -&gt;&#10;  $END$&#10;&#10;" description="componentWillUpdate" toReformat="false" toShortenFQNames="true">
   <context>
     <option name="CoffeeScript" value="true" />
   </context>
@@ -64,14 +64,14 @@
     <option name="CoffeeScript" value="true" />
   </context>
 </template>
-<template name="rcc" value="DOM = React.DOM&#10;&#10;$class$ = React.createClass &#10;  render: -&gt;&#10;    $END$&#10;&#10;window.$class$ = $class$&#10;" description="Create a React.js component" toReformat="false" toShortenFQNames="true">
+<template name="rcc" value="DOM = React.DOM&#10;&#10;$class$ = React.createClass&#10;  displayName: '$class$'&#10;&#10;  render: -&gt;&#10;    $END$&#10;&#10;window.$class$ = React.createFactory($class$)&#10;" description="Create a React.js component" toReformat="false" toShortenFQNames="true">
   <variable name="class" expression="complete()" defaultValue="" alwaysStopAt="true" />
   <context>
     <option name="CoffeeScript" value="true" />
   </context>
 </template>
-<template name="rccc" value="$START$ = React.createClass &#10;  render: -&gt;&#10;    $END$&#10;" description="Create a sub component" toReformat="false" toShortenFQNames="true">
-  <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
+<template name="rccc" value="$class$ = React.createClass&#10;  displayName: '$class$'&#10;  &#10;  render: -&gt;&#10;    $END$&#10;" description="Create a sub component" toReformat="false" toShortenFQNames="true">
+  <variable name="class" expression="" defaultValue="" alwaysStopAt="true" />
   <context>
     <option name="CoffeeScript" value="true" />
   </context>
@@ -92,7 +92,7 @@
     <option name="CoffeeScript" value="true" />
   </context>
 </template>
-<template name="scu" value="shouldComponentUpdate: -&gt; (nextProps, nextState)&#10;  $END$&#10;" description="shouldComponentUpdate" toReformat="false" toShortenFQNames="true">
+<template name="scu" value="shouldComponentUpdate: (nextProps, nextState) -&gt;&#10;  $END$&#10;" description="shouldComponentUpdate" toReformat="false" toShortenFQNames="true">
   <context>
     <option name="CoffeeScript" value="true" />
   </context>
